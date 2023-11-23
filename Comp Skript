@@ -1,0 +1,24 @@
+#Please note that this has not been tested and might not work! If it does have any errors, please comment about it and I will get it fixed as soon as possible!
+
+variables:
+{AutoCompress.%player%} = false
+
+command /AutoCompress:
+    trigger:
+        if {AutoCompress} is true:
+            loop all players
+            #Right below this comment is everything that will compress just copy this paste it a few times and edit it!
+                if loop-player has 64 oak logs:
+                    remove 64 oak logs
+                    give loop-player 1 okay log with name "&eCompressed Log"
+
+        if {AutoCompress} is false:
+            set {AutoCompress} to true
+        if {AutoCompress} is true:
+            set {AutoCompress} to false
+
+command /compress:
+    trigger:
+        if player has 64 oak logs:
+            remove 64 oak logs
+            give player 1 oak log with name "&eCompressed Log"
