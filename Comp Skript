@@ -10,7 +10,7 @@ command /AutoCompress:
             #Right below this comment is everything that will compress just copy this paste it a few times and edit it!
                 if loop-player has 64 oak logs:
                     remove 64 oak logs
-                    give loop-player 1 okay log with name "&eCompressed Log"
+                    give loop-player 1 oak log with name "&eCompressed Log"
 
         if {AutoCompress} is false:
             set {AutoCompress} to true
